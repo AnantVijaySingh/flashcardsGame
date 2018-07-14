@@ -28,6 +28,10 @@ class DeckList extends React.Component {
     }
 }
 
+const styles = StyleSheet.create({
+
+});
+
 function  mapStateToProps(state) {
     return {
         decks: state['decks']
