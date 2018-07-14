@@ -5,7 +5,7 @@ import {handleInitialData} from "../actions/shared";
 
 function DeckView({title, questions}) {
     return (
-        <View style={styles.deck}>
+        <View style={styles.deck} key={title}>
             <Text style={styles.heading}>{title}</Text>
             <Text>{questions.length} Cards</Text>
         </View>
@@ -31,6 +31,7 @@ class DeckList extends React.Component {
                 <FlatList
                     data={Object.values(decks)}
                     renderItem={this.renderItem}
+                    keyExtractor={(item) => item.title}
                 />
             </View>
         )
