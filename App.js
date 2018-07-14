@@ -5,22 +5,20 @@ import {handleInitialData} from "./actions/shared";
 import reducer from './reducers';
 import middleware from './middleware';
 import {createStore} from 'redux';
+import {Provider} from 'react-redux';
 
 
 const store = createStore(reducer,middleware);
 
 export default class App extends React.Component{
 
-  componentDidMount() {
-      console.log('step 1');
-      store.dispatch(handleInitialData());
-  }
-
   render() {
     return (
-      <View style={styles.container}>
-        <DeckList/>
-      </View>
+        <Provider store={store}>
+            <View style={styles.container}>
+                <DeckList/>
+            </View>
+        </Provider>
     );
   }
 }

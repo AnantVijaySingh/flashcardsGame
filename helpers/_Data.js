@@ -24,7 +24,6 @@ let sampleData = {
 };
 
 export function getSampleData () {
-    console.log('step 3');
     return new Promise((res, rej) => {
         setTimeout(() => res({...sampleData}), 1000)
     })
