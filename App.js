@@ -7,7 +7,8 @@ import middleware from './middleware';
 import {createStore} from 'redux';
 import {FontAwesome, Ionicons} from '@expo/vector-icons';
 import {Provider} from 'react-redux';
-import {createMaterialTopTabNavigator, createBottomTabNavigator} from 'react-navigation'
+import {createMaterialTopTabNavigator, createBottomTabNavigator} from 'react-navigation';
+import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom-tabs';
 
 const purple = '#292477';
 const gray = '#f0f0f0';
@@ -52,19 +53,24 @@ const TabsiOS = createBottomTabNavigator({
         }
     });
 
-const TabsAndroid = createMaterialTopTabNavigator({
+const TabsAndroid = createMaterialBottomTabNavigator({
     DeckList: {
         screen: DeckList,
         navigationOptions: {
             tabBarLabel: 'Decks',
+            tabBarIcon: ({tintColor}) => <FontAwesome name='file' size={20} color={tintColor}/>
         }
     },
     NewDeck: {
         screen: NewDeck,
         navigationOptions: {
             tabBarLabel: 'Create',
+            tabBarIcon: ({tintColor}) => <FontAwesome name='plus-square' size={20} color={tintColor}/>
         }
     }
+}, {
+    barStyle: { backgroundColor: purple },
+    navigationOptions: {header: null}
 });
 
 export default class App extends React.Component{
