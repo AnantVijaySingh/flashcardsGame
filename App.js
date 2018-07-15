@@ -7,8 +7,9 @@ import middleware from './middleware';
 import {createStore} from 'redux';
 import {FontAwesome, Ionicons} from '@expo/vector-icons';
 import {Provider} from 'react-redux';
-import {createMaterialTopTabNavigator, createBottomTabNavigator} from 'react-navigation';
+import {createStackNavigator, createBottomTabNavigator} from 'react-navigation';
 import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom-tabs';
+import Deck from "./components/Deck";
 
 const purple = '#292477';
 const gray = '#f0f0f0';
@@ -73,12 +74,33 @@ const TabsAndroid = createMaterialBottomTabNavigator({
     navigationOptions: {header: null}
 });
 
+const Stack = createStackNavigator({
+    Home: {
+        screen: Platform.OS === 'ios' ? TabsiOS : TabsAndroid,
+        navigationOptions: {
+            header: null
+        }
+    },
+    Deck: {
+        screen: Deck,
+        // Note to self: navigationOptions can be passed function that allow getting data passed via navigate method in the component, in this case it's the name of the deck
+        navigationOptions: ({ navigation }) => ({
+            title: `${navigation.state.params.deckTitle} Deck`,
+            headerTintColor: white,
+            headerStyle: {
+                backgroundColor: purple
+            }
+        })
+    }
+});
+
+
 export default class App extends React.Component{
   render() {
     return (
         <Provider store={store}>
             <View style={styles.container}>
-                {Platform.OS === 'ios' ? <TabsiOS/> : <TabsAndroid/>}
+                <Stack/>
             </View>
         </Provider>
     );

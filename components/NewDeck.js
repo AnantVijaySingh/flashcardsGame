@@ -10,7 +10,7 @@ const black = '#262626';
 class NewDeck extends React.Component {
 
     state = {
-        input:'Name . . .'
+        input:'Name...'
     };
 
     handleTextChange = (input) => {
@@ -23,7 +23,7 @@ class NewDeck extends React.Component {
         let title = this.state.input;
         this.props.dispatch(newDeck(title));
         this.setState({
-            input:'Name . . .'
+            input:'Name...'
         });
         this.props.navigation.dispatch(NavigationActions.back({
             key:'NewDeck'

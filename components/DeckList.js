@@ -3,20 +3,7 @@ import {View, Text, StyleSheet, TouchableOpacity, FlatList, Platform} from 'reac
 import {connect} from 'react-redux';
 import {handleInitialData} from "../actions/shared";
 
-function DeckView({title, questions}) {
-    return (
-        <View style={styles.deck} key={title}>
-            <Text style={styles.heading}>{title}</Text>
-            <Text>{questions.length} Cards</Text>
-        </View>
-    )
-}
-
 class DeckList extends React.Component {
-
-    renderItem = ({item}) => {
-        return ( <DeckView { ...item}/>)
-    };
 
     componentDidMount() {
         this.props.dispatch(handleInitialData());
@@ -30,7 +17,17 @@ class DeckList extends React.Component {
             <View style={styles.container}>
                 <FlatList
                     data={Object.values(decks)}
-                    renderItem={this.renderItem}
+                    renderItem={({item}) =>
+                        <TouchableOpacity
+                            style={styles.deck}
+                            key={item.title}
+                            onPress={() => this.props.navigation.navigate(
+                                'Deck',
+                                {deckTitle: item.title}
+                            )}>
+                            <Text style={styles.heading}>{item.title}</Text>
+                            <Text>{item.questions.length} Cards</Text>
+                        </TouchableOpacity>}
                     keyExtractor={(item) => item.title}
                 />
             </View>

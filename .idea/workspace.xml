@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3b4f93e-25da-41d3-9295-6e1a26a42517" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/components/Deck.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DeckList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/DeckList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/NewDeck.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewDeck.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,8 +23,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="28" />
+            <state relative-caret-position="442">
+              <caret line="74" column="3" lean-forward="true" selection-start-line="74" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -30,13 +32,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewDeck.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NewDeck.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/NewDeck.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="7" selection-end-column="24" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Deck.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/components/Deck.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="48" column="19" lean-forward="true" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeckList.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/DeckList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="49" column="22" lean-forward="true" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,15 +89,16 @@
         <option value="$PROJECT_DIR$/reducers/card.js" />
         <option value="$PROJECT_DIR$/middleware/logger.js" />
         <option value="$PROJECT_DIR$/middleware/index.js" />
-        <option value="$PROJECT_DIR$/actions/deck.js" />
         <option value="$PROJECT_DIR$/helpers/_Data.js" />
         <option value="$PROJECT_DIR$/actions/shared.js" />
-        <option value="$PROJECT_DIR$/reducers/deck.js" />
         <option value="$PROJECT_DIR$/reducers/index.js" />
-        <option value="$PROJECT_DIR$/components/DeckList.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/App.js" />
+        <option value="$PROJECT_DIR$/actions/deck.js" />
+        <option value="$PROJECT_DIR$/reducers/deck.js" />
         <option value="$PROJECT_DIR$/components/NewDeck.js" />
+        <option value="$PROJECT_DIR$/components/DeckList.js" />
+        <option value="$PROJECT_DIR$/App.js" />
+        <option value="$PROJECT_DIR$/components/Deck.js" />
       </list>
     </option>
   </component>
@@ -116,12 +143,22 @@
             <path>
               <item name="flashcardsGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="flashcardsGame" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flashcardsGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flashcardsGame" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flashcardsGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="flashcardsGame" type="462c0819:PsiDirectoryNode" />
               <item name="helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flashcardsGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flashcardsGame" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -160,7 +197,7 @@
       <workItem from="1531351757344" duration="893000" />
       <workItem from="1531442115649" duration="18945000" />
       <workItem from="1531609674496" duration="2669000" />
-      <workItem from="1531613905498" duration="5262000" />
+      <workItem from="1531613905498" duration="14810000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1531352077969</created>
@@ -204,11 +241,25 @@
       <option name="project" value="LOCAL" />
       <updated>1531614408954</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Using createMaterialBottomTabNavigator for bottom navigation on Android&#10;Built the NewDeck component UI">
+      <created>1531622032709</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1531622032709</updated>
+    </task>
+    <task id="LOCAL-00008" summary="New Deck Component Redux Actions, Reducers and Navigation&#10;&#10;Used navigation.dispatch(NavigationActions.back({}) to route back to the Decks List screen after user clicks submit">
+      <created>1531685963142</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1531685963142</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27957000" />
+    <option name="totallyTimeSpent" value="37505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -247,7 +298,10 @@
     <MESSAGE value="Test Commit" />
     <MESSAGE value="Using FlatList to create the decks list view. &#10;Used Object.values to convert Redux object to Array as FlatList only accepts an Array for it data prop.&#10;&#10;--- Alternative solution to try ---&#10;Restructure Redux to Array format, so something like &#10;&#10;function myReducer(state=[], action){&#10;&#10; switch(action.type){&#10;&#10;   case GET_ALL_DECKS:&#10;&#10;       return [...state, action.decks];&#10;&#10; }  &#10;&#10;}" />
     <MESSAGE value="Fix issue introduced trying to fix vulnerabilities in packages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix issue introduced trying to fix vulnerabilities in packages" />
+    <MESSAGE value="Using createMaterialBottomTabNavigator for bottom navigation on Android&#10;Built the NewDeck UI" />
+    <MESSAGE value="Using createMaterialBottomTabNavigator for bottom navigation on Android&#10;Built the NewDeck component UI" />
+    <MESSAGE value="New Deck Component Redux Actions, Reducers and Navigation&#10;&#10;Used navigation.dispatch(NavigationActions.back({}) to route back to the Decks List screen after user clicks submit" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Deck Component Redux Actions, Reducers and Navigation&#10;&#10;Used navigation.dispatch(NavigationActions.back({}) to route back to the Decks List screen after user clicks submit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -384,23 +438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reducers/deck.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/actions/shared.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -412,23 +449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/actions/deck.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/DeckList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -446,10 +466,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reducers/deck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/actions/deck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="28" />
+        <state relative-caret-position="442">
+          <caret line="74" column="3" lean-forward="true" selection-start-line="74" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/DeckList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="49" column="22" lean-forward="true" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -458,10 +512,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/NewDeck.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="7" selection-end-column="24" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Deck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="48" column="19" lean-forward="true" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
