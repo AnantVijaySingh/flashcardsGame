@@ -1,5 +1,8 @@
 import React from 'react'
 import {View, Text, StyleSheet, TextInput, KeyboardAvoidingView, TouchableOpacity, TouchableNativeFeedback, Platform} from 'react-native';
+import {connect} from 'react-redux';
+import {newDeck} from "../actions/deck";
+import {NavigationActions} from 'react-navigation'
 
 const gray = '#f0f0f0';
 const black = '#262626';
@@ -17,7 +20,14 @@ class NewDeck extends React.Component {
     };
 
     handleBtnClick = () => {
-
+        let title = this.state.input;
+        this.props.dispatch(newDeck(title));
+        this.setState({
+            input:'Name . . .'
+        });
+        this.props.navigation.dispatch(NavigationActions.back({
+            key:'NewDeck'
+        }))
     };
 
     render() {
@@ -86,4 +96,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default NewDeck;
+export default connect()(NewDeck);
