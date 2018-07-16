@@ -9,7 +9,8 @@ import {FontAwesome, Ionicons} from '@expo/vector-icons';
 import {Provider} from 'react-redux';
 import {createStackNavigator, createBottomTabNavigator} from 'react-navigation';
 import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom-tabs';
-import Deck from "./components/Deck";
+import Deck from './components/Deck';
+import NewCard from './components/NewCard';
 
 const purple = '#292477';
 const gray = '#f0f0f0';
@@ -100,7 +101,7 @@ export default class App extends React.Component{
     return (
         <Provider store={store}>
             <View style={styles.container}>
-                <Stack/>
+                <NewCard/>
             </View>
         </Provider>
     );

@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3b4f93e-25da-41d3-9295-6e1a26a42517" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Deck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DeckList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/DeckList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewDeck.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewDeck.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,8 +21,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="74" column="3" lean-forward="true" selection-start-line="74" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
+            <state relative-caret-position="552">
+              <caret line="103" column="24" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -32,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewDeck.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NewDeck.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/NewDeck.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="7" selection-end-column="24" />
+            <state relative-caret-position="442">
+              <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -44,23 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Deck.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/components/Deck.js">
+      <file leaf-file-name="NewCard.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/NewCard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="48" column="19" lean-forward="true" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeckList.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/DeckList.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="49" column="22" lean-forward="true" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+            <state relative-caret-position="-102">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -95,10 +81,11 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/actions/deck.js" />
         <option value="$PROJECT_DIR$/reducers/deck.js" />
-        <option value="$PROJECT_DIR$/components/NewDeck.js" />
         <option value="$PROJECT_DIR$/components/DeckList.js" />
-        <option value="$PROJECT_DIR$/App.js" />
         <option value="$PROJECT_DIR$/components/Deck.js" />
+        <option value="$PROJECT_DIR$/App.js" />
+        <option value="$PROJECT_DIR$/components/NewCard.js" />
+        <option value="$PROJECT_DIR$/components/NewDeck.js" />
       </list>
     </option>
   </component>
@@ -197,7 +184,7 @@
       <workItem from="1531351757344" duration="893000" />
       <workItem from="1531442115649" duration="18945000" />
       <workItem from="1531609674496" duration="2669000" />
-      <workItem from="1531613905498" duration="14810000" />
+      <workItem from="1531613905498" duration="16661000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1531352077969</created>
@@ -255,11 +242,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531685963142</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="- Built Deck Component UI&#10;- Added Stack Navigation to route to each individual deck">
+      <created>1531693137478</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1531693137479</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37505000" />
+    <option name="totallyTimeSpent" value="39356000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -301,7 +295,8 @@
     <MESSAGE value="Using createMaterialBottomTabNavigator for bottom navigation on Android&#10;Built the NewDeck UI" />
     <MESSAGE value="Using createMaterialBottomTabNavigator for bottom navigation on Android&#10;Built the NewDeck component UI" />
     <MESSAGE value="New Deck Component Redux Actions, Reducers and Navigation&#10;&#10;Used navigation.dispatch(NavigationActions.back({}) to route back to the Decks List screen after user clicks submit" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Deck Component Redux Actions, Reducers and Navigation&#10;&#10;Used navigation.dispatch(NavigationActions.back({}) to route back to the Decks List screen after user clicks submit" />
+    <MESSAGE value="- Built Deck Component UI&#10;- Added Stack Navigation to route to each individual deck" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Built Deck Component UI&#10;- Added Stack Navigation to route to each individual deck" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -490,16 +485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="74" column="3" lean-forward="true" selection-start-line="74" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/DeckList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
@@ -510,22 +495,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/NewDeck.js">
+    <entry file="file://$PROJECT_DIR$/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="552">
+          <caret line="103" column="24" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/Deck.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="48" column="19" lean-forward="true" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="5" selection-end-column="24" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/NewCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/NewDeck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
