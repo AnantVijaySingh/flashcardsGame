@@ -84,6 +84,7 @@ const styles = StyleSheet.create({
         width: 150,
         padding: 10,
         margin: 5,
+        elevation: 5
     },
     btnText: {
         color: 'white',
