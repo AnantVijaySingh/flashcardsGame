@@ -9,12 +9,17 @@ const black = '#262626';
 class Deck extends React.Component {
 
     handleCardBtnClick = () => {
-        console.log('Btn Pressed');
         this.props.navigation.navigate(
             'NewCard',
             {deckTitle: this.props.navigation.state.params.deckTitle}
         )
+    };
 
+    handleQuizBtnClick = () => {
+        this.props.navigation.navigate(
+            'Quiz',
+            {deckTitle: this.props.navigation.state.params.deckTitle}
+        )
     };
 
     render() {
@@ -29,7 +34,7 @@ class Deck extends React.Component {
                     <Text style={styles.btnText}>Add Cards</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.btn}>
-                    <Text style={styles.btnText}>Start Quiz</Text>
+                    <Text style={styles.btnText} onPress={this.handleQuizBtnClick}>Start Quiz</Text>
                 </TouchableOpacity>
             </View>
         )

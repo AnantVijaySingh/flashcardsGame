@@ -11,6 +11,7 @@ import {createStackNavigator, createBottomTabNavigator} from 'react-navigation';
 import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom-tabs';
 import Deck from './components/Deck';
 import NewCard from './components/NewCard';
+import Quiz from './components/Quiz';
 
 const purple = '#292477';
 const gray = '#f0f0f0';
@@ -104,17 +105,17 @@ const Stack = createStackNavigator({
             }
         })
     },
-    // Deck: {
-    //     screen: Deck,
-    //     // Note to self: navigationOptions can be passed function that allow getting data passed via navigate method in the component, in this case it's the name of the deck
-    //     navigationOptions: ({ navigation }) => ({
-    //         title: `${navigation.state.params.deckTitle} Deck`,
-    //         headerTintColor: white,
-    //         headerStyle: {
-    //             backgroundColor: purple
-    //         }
-    //     })
-    // }
+    Quiz: {
+        screen: Quiz,
+        // Note to self: navigationOptions can be passed function that allow getting data passed via navigate method in the component, in this case it's the name of the deck
+        navigationOptions: ({ navigation }) => ({
+            title: 'Quiz Mode',
+            headerTintColor: white,
+            headerStyle: {
+                backgroundColor: purple
+            }
+        })
+    },
 });
 
 
