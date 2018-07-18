@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity, TextInput, Platform, TouchableNativeFeedback, KeyboardAvoidingView} from 'react-native';
 import {connect} from 'react-redux';
-import {NavigationActions} from "react-navigation";
+import {addCard} from "../actions/deck";
 
 const gray = '#f0f0f0';
 const gray2 = '#8f8f8f';
@@ -32,27 +32,30 @@ class NewCard extends React.Component {
     handleBtnClick = () => {
         let ques = this.state.questionText;
         let ans = this.state.answerText;
+        const {deckTitle} = this.props.navigation.state.params;
 
 
         //Prevent user from submitting default values
         if(ques !== quesText && ans !== ansText) {
             // Dispatch action to add question to the deck
+            this.props.dispatch(addCard({deckTitle, ques, ans}));
         }
 
         this.setState({
             questionText: quesText,
             answerText: ansText
         });
+
+        this.props.navigation.goBack();
     };
 
     render() {
 
         const {questionText, answerText} =  this.state;
         let disabled = this.state.questionText === quesText || this.state.answerText === ansText;
-        console.log(disabled);
 
         return (
-            <KeyboardAvoidingView behavior='padding' style={styles.container}>
+            <KeyboardAvoidingView behavior='padding' style={styles.container} enabled={true}>
                 <Text style={styles.heading}>
                     Add New Question
                 </Text>

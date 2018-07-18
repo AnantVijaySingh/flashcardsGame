@@ -1,11 +1,21 @@
 import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {connect} from 'react-redux';
+import NewCard from './NewCard';
 
 const gray = '#f0f0f0';
 const black = '#262626';
 
 class Deck extends React.Component {
+
+    handleCardBtnClick = () => {
+        console.log('Btn Pressed');
+        this.props.navigation.navigate(
+            'NewCard',
+            {deckTitle: this.props.navigation.state.params.deckTitle}
+        )
+
+    };
 
     render() {
 
@@ -15,7 +25,7 @@ class Deck extends React.Component {
             <View style={styles.container}>
                 <Text style={styles.heading}>{decks[this.props.navigation.state.params.deckTitle].title}</Text>
                 <Text style={styles.subHeading}>{decks[this.props.navigation.state.params.deckTitle].questions.length} Cards</Text>
-                <TouchableOpacity style={styles.btn}>
+                <TouchableOpacity style={styles.btn} onPress={this.handleCardBtnClick}>
                     <Text style={styles.btnText}>Add Cards</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.btn}>

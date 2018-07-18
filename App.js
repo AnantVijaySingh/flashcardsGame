@@ -92,7 +92,29 @@ const Stack = createStackNavigator({
                 backgroundColor: purple
             }
         })
-    }
+    },
+    NewCard: {
+        screen: NewCard,
+        // Note to self: navigationOptions can be passed function that allow getting data passed via navigate method in the component, in this case it's the name of the deck
+        navigationOptions: ({ navigation }) => ({
+            title: 'Create Card',
+            headerTintColor: white,
+            headerStyle: {
+                backgroundColor: purple
+            }
+        })
+    },
+    // Deck: {
+    //     screen: Deck,
+    //     // Note to self: navigationOptions can be passed function that allow getting data passed via navigate method in the component, in this case it's the name of the deck
+    //     navigationOptions: ({ navigation }) => ({
+    //         title: `${navigation.state.params.deckTitle} Deck`,
+    //         headerTintColor: white,
+    //         headerStyle: {
+    //             backgroundColor: purple
+    //         }
+    //     })
+    // }
 });
 
 
@@ -101,7 +123,7 @@ export default class App extends React.Component{
     return (
         <Provider store={store}>
             <View style={styles.container}>
-                <NewCard/>
+                <Stack/>
             </View>
         </Provider>
     );

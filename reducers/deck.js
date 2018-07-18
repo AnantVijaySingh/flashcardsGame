@@ -1,4 +1,4 @@
-import {GET_ALL_DECKS, NEW_DECK, GET_DECK} from "../actions/deck";
+import {GET_ALL_DECKS, NEW_DECK, ADD_CARD} from "../actions/deck";
 
 function deck(state={}, action) {
     switch (action.type) {
@@ -12,6 +12,14 @@ function deck(state={}, action) {
                 [action.title]: {
                     title: action.title,
                     questions: []
+                }
+            };
+        case ADD_CARD:
+            return {
+                ...state,
+                [action.deckTitle]: {
+                    ...state[action.deckTitle],
+                    questions: state[action.deckTitle].questions.concat({question: action.ques, answer: action.ans})
                 }
             };
         default:
