@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3b4f93e-25da-41d3-9295-6e1a26a42517" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Quiz.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Deck.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Deck.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/NewDeck.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewDeck.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Quiz.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,11 +30,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="NewDeck.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/NewDeck.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Deck.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/Deck.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="46" column="35" lean-forward="true" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+            <state relative-caret-position="391">
+              <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -46,8 +57,20 @@
       <file leaf-file-name="Quiz.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/Quiz.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="118" column="19" lean-forward="true" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
+            <state relative-caret-position="561">
+              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewCard.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/NewCard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="57" column="40" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -77,7 +100,6 @@
         <option value="$PROJECT_DIR$/helpers/_Data.js" />
         <option value="$PROJECT_DIR$/actions/shared.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/components/NewDeck.js" />
         <option value="$PROJECT_DIR$/components/DeckList.js" />
         <option value="$PROJECT_DIR$/actions/card.js" />
         <option value="$PROJECT_DIR$/reducers/card.js" />
@@ -87,6 +109,7 @@
         <option value="$PROJECT_DIR$/components/NewCard.js" />
         <option value="$PROJECT_DIR$/components/Deck.js" />
         <option value="$PROJECT_DIR$/App.js" />
+        <option value="$PROJECT_DIR$/components/NewDeck.js" />
         <option value="$PROJECT_DIR$/components/Quiz.js" />
       </list>
     </option>
@@ -187,7 +210,7 @@
       <workItem from="1531442115649" duration="18945000" />
       <workItem from="1531609674496" duration="2669000" />
       <workItem from="1531613905498" duration="26652000" />
-      <workItem from="1531950090731" duration="4153000" />
+      <workItem from="1531950090731" duration="9725000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1531352077969</created>
@@ -273,11 +296,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531874992439</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Quiz component &#10;- Added to navigation&#10;- Logic to show question and then answer&#10;- Iterate through the questions&#10;- Update score&#10; &#10; ToDo: &#10; - Layout&#10; - Logic for quiz end">
+      <created>1531958162055</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1531958162055</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53500000" />
+    <option name="totallyTimeSpent" value="59072000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -323,7 +353,8 @@
     <MESSAGE value="Built New Card (Question) component UI" />
     <MESSAGE value="Refine NewCard component with conditions for enabling submit btn and small fixes" />
     <MESSAGE value="- Defined actions and reducers for NewCard component &#10;- Added more components to the Stack Navigator&#10; &#10; Note: Another navigation structure could be to create a stackNavigator for each tab rather than have tabNavigator as home route for the stackNavigator" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Defined actions and reducers for NewCard component &#10;- Added more components to the Stack Navigator&#10; &#10; Note: Another navigation structure could be to create a stackNavigator for each tab rather than have tabNavigator as home route for the stackNavigator" />
+    <MESSAGE value="Quiz component &#10;- Added to navigation&#10;- Logic to show question and then answer&#10;- Iterate through the questions&#10;- Update score&#10; &#10; ToDo: &#10; - Layout&#10; - Logic for quiz end" />
+    <option name="LAST_COMMIT_MESSAGE" value="Quiz component &#10;- Added to navigation&#10;- Logic to show question and then answer&#10;- Iterate through the questions&#10;- Update score&#10; &#10; ToDo: &#10; - Layout&#10; - Logic for quiz end" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -561,26 +592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/NewDeck.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/NewCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
-          <caret line="137" column="3" lean-forward="true" selection-start-line="137" selection-start-column="3" selection-end-line="137" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/DeckList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -601,10 +612,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/components/NewDeck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/NewCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="57" column="40" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/components/Deck.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="46" column="35" lean-forward="true" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+        <state relative-caret-position="391">
+          <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -613,8 +644,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/Quiz.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="118" column="19" lean-forward="true" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
+        <state relative-caret-position="561">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

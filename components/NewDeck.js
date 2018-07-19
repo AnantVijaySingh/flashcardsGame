@@ -42,6 +42,7 @@ class NewDeck extends React.Component {
                     style={styles.textField}
                     onChangeText={this.handleTextChange}
                     underlineColorAndroid='transparent'
+                    selectTextOnFocus={true}
                 />
                 {
                     Platform.OS === 'ios' ?
