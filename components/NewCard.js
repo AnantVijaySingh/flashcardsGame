@@ -2,6 +2,7 @@ import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity, TextInput, Platform, TouchableNativeFeedback, KeyboardAvoidingView} from 'react-native';
 import {connect} from 'react-redux';
 import {addCard} from "../actions/deck";
+import {_storeChanges} from "../helpers/storage";
 
 const gray = '#f0f0f0';
 const gray2 = '#8f8f8f';
@@ -38,7 +39,7 @@ class NewCard extends React.Component {
         //Prevent user from submitting default values
         if(ques !== quesText && ans !== ansText) {
             // Dispatch action to add question to the deck
-            this.props.dispatch(addCard({deckTitle, ques, ans}));
+            this.props.dispatch(addCard({deckTitle, ques, ans}))
         }
 
         this.setState({

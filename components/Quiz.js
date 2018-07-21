@@ -1,8 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {connect} from 'react-redux';
-import {handleInitialData} from "../actions/shared";
-import {NavigationActions} from "react-navigation";
 
 const gray = '#f0f0f0';
 const gray2 = '#8f8f8f';

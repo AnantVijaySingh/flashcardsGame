@@ -3,6 +3,7 @@ import {View, Text, StyleSheet, TextInput, KeyboardAvoidingView, TouchableOpacit
 import {connect} from 'react-redux';
 import {newDeck} from "../actions/deck";
 import {NavigationActions} from 'react-navigation'
+import {_storeChanges} from "../helpers/storage";
 
 const gray = '#f0f0f0';
 const black = '#262626';
@@ -22,6 +23,7 @@ class NewDeck extends React.Component {
     handleBtnClick = () => {
         let title = this.state.input;
         this.props.dispatch(newDeck(title));
+        _storeChanges(title);
         this.setState({
             input:'Name...'
         });

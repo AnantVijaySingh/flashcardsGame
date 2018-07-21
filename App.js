@@ -118,6 +118,12 @@ const Stack = createStackNavigator({
     },
 });
 
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: gray,
+    },
+});
 
 export default class App extends React.Component{
   render() {
@@ -130,10 +136,3 @@ export default class App extends React.Component{
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: gray,
-  },
-});

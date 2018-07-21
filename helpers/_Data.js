@@ -25,6 +25,6 @@ let sampleData = {
 
 export function getSampleData () {
     return new Promise((res, rej) => {
-        setTimeout(() => res({...sampleData}), 1000)
+        setTimeout(() => res({...sampleData}), 10)
     })
 }
