@@ -1,11 +1,18 @@
 import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity, FlatList, Platform} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity, FlatList, Platform, AsyncStorage} from 'react-native';
 import {connect} from 'react-redux';
 import {handleInitialData} from "../actions/shared";
 
 class DeckList extends React.Component {
 
     componentDidMount() {
+        // AsyncStorage.clear()
+        //     .then(() => {
+        //         // TODO: only to test startup loading of sample data
+        //         console.log('cleared keys');
+        //         this.props.dispatch(handleInitialData());
+        //     })
+
         this.props.dispatch(handleInitialData());
     }
 

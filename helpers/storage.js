@@ -31,7 +31,7 @@ let sampleData = {
 export function _InitializeData() {
     console.log('Initialized Data Called');
 
-    // AsyncStorage.clear()
+    // return AsyncStorage.clear()
     //     .then(() => console.log('All data cleared'));
 
     return AsyncStorage.getItem(KEY)
@@ -48,32 +48,22 @@ function getInitialData(value) {
     }
 
     return value === null
-        ? sampleData
+        ? JSON.stringify(sampleData)
         : AsyncStorage.getItem(KEY).then((value) => {
             console.log('data found');
             return value})
 }
 
 
-
-export function _storeChanges(title) {
+export function _storeNewDeckChanges(title) {
     console.log('storeChanges called', title);
 
-    return AsyncStorage.getItem(KEY)
-        .then((prevState) => {
-           return {...prevState,
-               [title]: {
-                   title: title,
-                   questions: []
-               }
-           }
-        })
-        .then(AsyncStorage.mergeItem(KEY, JSON.stringify({
+    AsyncStorage.mergeItem(KEY, JSON.stringify({
         [title]: {
             title: title,
             questions: []
         }
-    })))
+    }))
 }
 
 
