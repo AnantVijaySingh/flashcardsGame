@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity, TextInput, Platform, TouchableNativeFeedback, KeyboardAvoidingView} from 'react-native';
 import {connect} from 'react-redux';
 import {addCard} from "../actions/deck";
-import {_storeChanges} from "../helpers/storage";
+import {_storeChanges, _storeNewCardChanges} from "../helpers/storage";
 
 const gray = '#f0f0f0';
 const gray2 = '#8f8f8f';
@@ -34,6 +34,8 @@ class NewCard extends React.Component {
         let ques = this.state.questionText;
         let ans = this.state.answerText;
         const {deckTitle} = this.props.navigation.state.params;
+        const {questions} = this.props.decks[deckTitle];
+        console.log(questions);
 
 
         //Prevent user from submitting default values
@@ -46,6 +48,8 @@ class NewCard extends React.Component {
             questionText: quesText,
             answerText: ansText
         });
+
+        _storeNewCardChanges(deckTitle, ques, ans, questions);
 
         this.props.navigation.goBack();
     };
@@ -138,4 +142,10 @@ const styles = StyleSheet.create({
     }
 });
 
-export default connect()(NewCard);
+function mapStateToProps(state) {
+    return {
+        decks: state['decks']
+    }
+}
+
+export default connect(mapStateToProps)(NewCard);

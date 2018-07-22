@@ -31,9 +31,6 @@ let sampleData = {
 export function _InitializeData() {
     console.log('Initialized Data Called');
 
-    // return AsyncStorage.clear()
-    //     .then(() => console.log('All data cleared'));
-
     return AsyncStorage.getItem(KEY)
         .then((value) => getInitialData(value))
 }
@@ -66,31 +63,12 @@ export function _storeNewDeckChanges(title) {
     }))
 }
 
+export function _storeNewCardChanges(title, ques, ans, questionsArray) {
+    console.log('storeCardChanges called', title);
 
-
-
-
-
-// export function _InitializeData() {
-//     setTimeout(() => {
-//         console.log('Initialized Data Called');
-//
-//         // AsyncStorage.clear()
-//         //     .then(() => console.log('All data cleared'));
-//
-//         AsyncStorage.getItem(KEY, (err, result) => {console.log('getItem called', result)})
-//             .then((value) => {
-//                 if (value!==null) {
-//                     console.log('Data found');
-//                     console.log(value);
-//                     return value
-//                 } else {
-//                     console.log('No data found');
-//                     console.log('Data to store is: ', sampleData);
-//                     AsyncStorage.setItem(KEY, JSON.stringify(sampleData))
-//                         .then(() => {return data})
-//                         .catch((err) => {alert('Storage issue: ' + err)})
-//                 }
-//             })
-//     }, 5000)
-// }
+    AsyncStorage.mergeItem(KEY, JSON.stringify({
+        [title]: {
+            questions: [...questionsArray, {question: ques, answer: ans}]
+        }
+    }))
+}
