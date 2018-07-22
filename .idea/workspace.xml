@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3b4f93e-25da-41d3-9295-6e1a26a42517" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/helpers/notificationHelper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/storage.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/storage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/deck.js" beforeDir="false" afterPath="$PROJECT_DIR$/actions/deck.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/shared.js" beforeDir="false" afterPath="$PROJECT_DIR$/actions/shared.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Deck.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Deck.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/_Data.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/_Data.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +25,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+            <state relative-caret-position="612">
+              <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -30,41 +34,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="storage.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="storage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helpers/storage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_Data.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/helpers/_Data.js">
+      <file leaf-file-name="shared.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/actions/shared.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewCard.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/NewCard.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="54" column="6" lean-forward="true" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+            <state relative-caret-position="187">
+              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Deck.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="notificationHelper.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/helpers/notificationHelper.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Deck.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/Deck.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="671">
-              <caret line="74" selection-start-line="74" selection-end-line="78" selection-end-column="1" />
+            <state relative-caret-position="731">
+              <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -96,17 +103,18 @@
         <option value="$PROJECT_DIR$/reducers/card.js" />
         <option value="$PROJECT_DIR$/reducers/index.js" />
         <option value="$PROJECT_DIR$/reducers/deck.js" />
-        <option value="$PROJECT_DIR$/components/Deck.js" />
         <option value="$PROJECT_DIR$/components/Quiz.js" />
-        <option value="$PROJECT_DIR$/App.js" />
         <option value="$PROJECT_DIR$/helpers/storeage.js" />
-        <option value="$PROJECT_DIR$/actions/shared.js" />
-        <option value="$PROJECT_DIR$/actions/deck.js" />
-        <option value="$PROJECT_DIR$/helpers/_Data.js" />
         <option value="$PROJECT_DIR$/components/DeckList.js" />
         <option value="$PROJECT_DIR$/components/NewDeck.js" />
         <option value="$PROJECT_DIR$/components/NewCard.js" />
         <option value="$PROJECT_DIR$/helpers/storage.js" />
+        <option value="$PROJECT_DIR$/actions/deck.js" />
+        <option value="$PROJECT_DIR$/actions/shared.js" />
+        <option value="$PROJECT_DIR$/helpers/_Data.js" />
+        <option value="$PROJECT_DIR$/App.js" />
+        <option value="$PROJECT_DIR$/helpers/notificationHelper.js" />
+        <option value="$PROJECT_DIR$/components/Deck.js" />
       </list>
     </option>
   </component>
@@ -176,7 +184,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-nanodegree-reactNative" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
@@ -206,7 +214,7 @@
       <workItem from="1531442115649" duration="18945000" />
       <workItem from="1531609674496" duration="2669000" />
       <workItem from="1531613905498" duration="26652000" />
-      <workItem from="1531950090731" duration="29334000" />
+      <workItem from="1531950090731" duration="35234000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1531352077969</created>
@@ -320,11 +328,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532220075241</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="AsyncStorage&#10; - Storing new cards">
+      <created>1532282435452</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1532282435453</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78681000" />
+    <option name="totallyTimeSpent" value="84581000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -394,7 +409,8 @@
     <MESSAGE value="Quiz component &#10;- End of quiz UI&#10;- Scoring UI changes&#10;- Restart and Home navigation" />
     <MESSAGE value="AsyncStorage&#10;- Basic works&#10;&#10;Issue:&#10;- Loading sample data&#10;- Merging new deck state" />
     <MESSAGE value="AsyncStorage&#10; - Fixed issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="AsyncStorage&#10; - Fixed issues" />
+    <MESSAGE value="AsyncStorage&#10; - Storing new cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="AsyncStorage&#10; - Storing new cards" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -591,49 +607,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/reducers/card.js" />
     <entry file="file://$PROJECT_DIR$/actions/card.js" />
-    <entry file="file://$PROJECT_DIR$/components/Quiz.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2508">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reducers/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/actions/deck.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/actions/shared.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="56" lean-forward="true" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -665,20 +644,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/Deck.js">
+    <entry file="file://$PROJECT_DIR$/actions/deck.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="74" selection-start-line="74" selection-end-line="78" selection-end-column="1" />
+        <state relative-caret-position="425">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helpers/_Data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Quiz.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helpers/_Data.js">
+    <entry file="file://$PROJECT_DIR$/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        <state relative-caret-position="612">
+          <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -692,10 +688,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/actions/shared.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/helpers/storage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helpers/notificationHelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Deck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

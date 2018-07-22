@@ -12,6 +12,7 @@ import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom
 import Deck from './components/Deck';
 import NewCard from './components/NewCard';
 import Quiz from './components/Quiz';
+import {setLocalNotification} from "./helpers/notificationHelper";
 
 const purple = '#292477';
 const gray = '#f0f0f0';
@@ -126,13 +127,18 @@ const styles = StyleSheet.create({
 });
 
 export default class App extends React.Component{
-  render() {
-    return (
-        <Provider store={store}>
-            <View style={styles.container}>
-                <Stack/>
-            </View>
-        </Provider>
-    );
-  }
+
+    componentDidMount() {
+        setLocalNotification()
+    }
+
+    render() {
+        return (
+            <Provider store={store}>
+                <View style={styles.container}>
+                    <Stack/>
+                </View>
+            </Provider>
+        );
+    }
 }

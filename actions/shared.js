@@ -1,5 +1,4 @@
 import {getAllDecks} from "./deck";
-import {getSampleData} from "../helpers/_Data";
 import {_InitializeData} from "../helpers/storage";
 
 export function handleInitialData() {

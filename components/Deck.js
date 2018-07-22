@@ -2,8 +2,8 @@ import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {connect} from 'react-redux';
 import NewCard from './NewCard';
+import {setLocalNotification, clearLocalNotifications} from "../helpers/notificationHelper";
 
-const gray = '#f0f0f0';
 const black = '#262626';
 
 class Deck extends React.Component {
@@ -19,7 +19,11 @@ class Deck extends React.Component {
         this.props.navigation.navigate(
             'Quiz',
             {deckTitle: this.props.navigation.state.params.deckTitle}
-        )
+        );
+
+        // clear notifications for today and set them up for the next day
+        clearLocalNotifications()
+            .then(setLocalNotification);
     };
 
     render() {

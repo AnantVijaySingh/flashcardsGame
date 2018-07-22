@@ -1,3 +1,5 @@
+//TODO: Delete this file
+
 let sampleData = {
     React: {
         title: 'React',
