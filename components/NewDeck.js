@@ -2,7 +2,6 @@ import React from 'react'
 import {View, Text, StyleSheet, TextInput, KeyboardAvoidingView, TouchableOpacity, TouchableNativeFeedback, Platform} from 'react-native';
 import {connect} from 'react-redux';
 import {newDeck} from "../actions/deck";
-import {NavigationActions} from 'react-navigation'
 import {_storeNewDeckChanges} from "../helpers/storage";
 
 const gray = '#f0f0f0';
@@ -27,9 +26,11 @@ class NewDeck extends React.Component {
         this.setState({
             input:'Name...'
         });
-        this.props.navigation.dispatch(NavigationActions.back({
-            key:'NewDeck'
-        }))
+
+        this.props.navigation.navigate(
+            'Deck',
+            {deckTitle: title}
+        )
     };
 
     render() {

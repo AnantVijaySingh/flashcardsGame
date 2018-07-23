@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity, TextInput, Platform, TouchableNativeFeedback, KeyboardAvoidingView} from 'react-native';
 import {connect} from 'react-redux';
 import {addCard} from "../actions/deck";
-import {_storeChanges, _storeNewCardChanges} from "../helpers/storage";
+import {_storeNewCardChanges} from "../helpers/storage";
 
 const gray = '#f0f0f0';
 const gray2 = '#8f8f8f';

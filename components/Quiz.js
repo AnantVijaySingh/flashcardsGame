@@ -3,7 +3,6 @@ import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {connect} from 'react-redux';
 
 const gray = '#f0f0f0';
-const gray2 = '#8f8f8f';
 const black = '#262626';
 
 class Quiz extends React.Component {

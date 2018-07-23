@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Platform } from 'react-native';
+import { StyleSheet, StatusBar, View, Platform } from 'react-native';
 import DeckList from './components/DeckList';
 import NewDeck from './components/NewDeck';
 import reducer from './reducers';
@@ -13,17 +13,21 @@ import Deck from './components/Deck';
 import NewCard from './components/NewCard';
 import Quiz from './components/Quiz';
 import {setLocalNotification} from "./helpers/notificationHelper";
+import {Constants} from 'expo';
 
 const purple = '#292477';
 const gray = '#f0f0f0';
 const white = '#fff';
-const red = '#b71845';
-const orange = '#f26f28';
-const blue = '#4e4cb8';
-const lightPurp = '#7c53c3';
-const pink = '#b93fb3';
 
 const store = createStore(reducer,middleware);
+
+function FlashcardStatusBar({backgroundColor, ...props}) {
+    return (
+        <View style={{backgroundColor, height: Constants.statusBarHeight}}>
+            <StatusBar translucent backgroundColor={backgroundColor} {...props}/>
+        </View>
+    )
+}
 
 const TabsiOS = createBottomTabNavigator({
     DeckList: {
@@ -136,6 +140,7 @@ export default class App extends React.Component{
         return (
             <Provider store={store}>
                 <View style={styles.container}>
+                    <FlashcardStatusBar backgroundColor={purple} barStyle='light-content'/>
                     <Stack/>
                 </View>
             </Provider>
