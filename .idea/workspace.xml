@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d3b4f93e-25da-41d3-9295-6e1a26a42517" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DeckList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/DeckList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewDeck.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewDeck.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Quiz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/_Data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/shared.js" beforeDir="false" afterPath="$PROJECT_DIR$/actions/shared.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/notificationHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/notificationHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/storage.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/storage.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,11 +21,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="storage.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/helpers/storage.js">
+      <file leaf-file-name="notificationHelper.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/helpers/notificationHelper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="55" column="46" lean-forward="true" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
+            <state relative-caret-position="322">
+              <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="136">
+                <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="42" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shared.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/actions/shared.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -56,17 +91,19 @@
         <option value="$PROJECT_DIR$/reducers/index.js" />
         <option value="$PROJECT_DIR$/reducers/deck.js" />
         <option value="$PROJECT_DIR$/helpers/storeage.js" />
-        <option value="$PROJECT_DIR$/helpers/storage.js" />
         <option value="$PROJECT_DIR$/actions/deck.js" />
-        <option value="$PROJECT_DIR$/actions/shared.js" />
         <option value="$PROJECT_DIR$/helpers/_Data.js" />
-        <option value="$PROJECT_DIR$/helpers/notificationHelper.js" />
         <option value="$PROJECT_DIR$/components/Deck.js" />
         <option value="$PROJECT_DIR$/components/NewDeck.js" />
         <option value="$PROJECT_DIR$/App.js" />
         <option value="$PROJECT_DIR$/components/DeckList.js" />
         <option value="$PROJECT_DIR$/components/NewCard.js" />
         <option value="$PROJECT_DIR$/components/Quiz.js" />
+        <option value="$PROJECT_DIR$/app.json" />
+        <option value="$PROJECT_DIR$/helpers/storage.js" />
+        <option value="$PROJECT_DIR$/actions/shared.js" />
+        <option value="$PROJECT_DIR$/helpers/notificationHelper.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -167,7 +204,7 @@
       <workItem from="1531609674496" duration="2669000" />
       <workItem from="1531613905498" duration="26652000" />
       <workItem from="1531950090731" duration="35642000" />
-      <workItem from="1532385392855" duration="2475000" />
+      <workItem from="1532385392855" duration="4920000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1531352077969</created>
@@ -295,11 +332,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532302370270</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Fixed navigation post new deck creation">
+      <created>1532388573770</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1532388573770</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87464000" />
+    <option name="totallyTimeSpent" value="89909000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -371,7 +415,8 @@
     <MESSAGE value="AsyncStorage&#10; - Fixed issues" />
     <MESSAGE value="AsyncStorage&#10; - Storing new cards" />
     <MESSAGE value="Local notifications&#10;&#10;Core complete requirements completed&#10;Todo:&#10;- Add status bar space&#10;- Remove _Data.js&#10;- Clean up console.logs&#10;- Add comments to define components&#10;- Remove unused color variables&#10;- Extract for Android and iOS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Local notifications&#10;&#10;Core complete requirements completed&#10;Todo:&#10;- Add status bar space&#10;- Remove _Data.js&#10;- Clean up console.logs&#10;- Add comments to define components&#10;- Remove unused color variables&#10;- Extract for Android and iOS" />
+    <MESSAGE value="Fixed navigation post new deck creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed navigation post new deck creation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -613,56 +658,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reducers/card.js" />
     <entry file="file://$PROJECT_DIR$/actions/card.js" />
-    <entry file="file://$PROJECT_DIR$/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reducers/deck.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/actions/deck.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helpers/notificationHelper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/actions/shared.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -733,10 +734,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reducers/deck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/helpers/storage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="55" column="46" lean-forward="true" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
+        <state relative-caret-position="799">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/actions/shared.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helpers/notificationHelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

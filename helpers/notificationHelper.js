@@ -4,9 +4,6 @@ import {AsyncStorage} from 'react-native';
 const NOTIFICATION_KEY = 'Flashcard:Notifications';
 
 export function clearLocalNotifications() {
-
-    console.log('clearLocalNotifications called');
-
     return AsyncStorage.removeItem(NOTIFICATION_KEY)
         .then(Notifications.cancelAllScheduledNotificationsAsync);
 }
@@ -34,7 +31,9 @@ export function setLocalNotification() {
             if(data === null) {
                 Permissions.askAsync(Permissions.NOTIFICATIONS)
                     .then(({status}) => {
+                        console.log('Notification permission is: ', status);
                         if(status === 'granted') {
+                            console.log('notification permission status is granted');
                             Notifications.cancelAllScheduledNotificationsAsync(); // To avoid setting multiple notifications
 
                             let tomorrow = new Date();

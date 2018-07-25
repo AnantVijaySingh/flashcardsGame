@@ -29,16 +29,11 @@ let sampleData = {
 
 
 export function _InitializeData() {
-    console.log('Initialized Data Called');
-
     return AsyncStorage.getItem(KEY)
         .then((value) => getInitialData(value))
 }
 
 function getInitialData(value) {
-
-    console.log(value);
-
     if(value === null) {
         AsyncStorage.setItem(KEY,JSON.stringify(sampleData))
             .catch((err) => console.log('error saving data', err));
@@ -47,14 +42,11 @@ function getInitialData(value) {
     return value === null
         ? JSON.stringify(sampleData)
         : AsyncStorage.getItem(KEY).then((value) => {
-            console.log('data found');
             return value})
 }
 
 
 export function _storeNewDeckChanges(title) {
-    console.log('storeChanges called', title);
-
     AsyncStorage.mergeItem(KEY, JSON.stringify({
         [title]: {
             title: title,
@@ -64,8 +56,6 @@ export function _storeNewDeckChanges(title) {
 }
 
 export function _storeNewCardChanges(title, ques, ans, questionsArray) {
-    console.log('storeCardChanges called', title);
-
     AsyncStorage.mergeItem(KEY, JSON.stringify({
         [title]: {
             questions: [...questionsArray, {question: ques, answer: ans}]
